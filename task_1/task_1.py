@@ -81,6 +81,5 @@ while True:
     else:
         break
 
-with open('task_1.json', 'w') as f:
-    json.dump(vacancies, f)
-print()
+with open('task_1.json', 'w', encoding='utf-8') as f:
+    json.dump(vacancies, f, ensure_ascii=False)
