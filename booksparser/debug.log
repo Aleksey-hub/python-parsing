@@ -1,0 +1,1427 @@
+2021-08-11 23:30:21 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: booksparser)
+2021-08-11 23:30:21 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.7.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  6 2021, 13:40:21) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+2021-08-11 23:30:21 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-08-11 23:30:21 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'booksparser',
+ 'CONCURRENT_REQUESTS': 32,
+ 'LOG_FILE': 'debug.log',
+ 'NEWSPIDER_MODULE': 'booksparser.spiders',
+ 'SPIDER_MODULES': ['booksparser.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/91.0.4472.135 YaBrowser/21.6.3.757 '
+               'Yowser/2.5 Safari/537.36'}
+2021-08-11 23:30:21 [scrapy.extensions.telnet] INFO: Telnet Password: 8092b00d8697d024
+2021-08-11 23:30:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-08-11 23:30:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-08-11 23:30:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-08-11 23:30:22 [scrapy.middleware] INFO: Enabled item pipelines:
+['booksparser.pipelines.BooksparserPipeline']
+2021-08-11 23:30:22 [scrapy.core.engine] INFO: Spider opened
+2021-08-11 23:30:22 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-08-11 23:30:22 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-08-11 23:30:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/search/python/?stype=0> (referer: None)
+2021-08-11 23:30:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/search/python/?stype=0&page=2> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/663312/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/812712/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/793071/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/789308/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/663312/>
+{'_id': ObjectId('6114174020ebc54f30e63ac0'),
+ 'book_authors': ['Гэддис Тони'],
+ 'book_discount_price': 1565.0,
+ 'book_link': 'https://www.labirint.ru/books/663312/',
+ 'book_name': 'Начинаем программировать на Python',
+ 'book_price': 2087.0,
+ 'book_rate': 9.86,
+ 'data_available_status': '1'}
+2021-08-11 23:30:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/733470/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/799392/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/577069/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/812712/>
+{'_id': ObjectId('6114174020ebc54f30e63ac1'),
+ 'book_authors': ['Уэйд Райан'],
+ 'book_discount_price': 1988.0,
+ 'book_link': 'https://www.labirint.ru/books/812712/',
+ 'book_name': 'Аналитика в Power BI с помощью R и Python',
+ 'book_price': 2651.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/672736/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/793071/>
+{'_id': ObjectId('6114174020ebc54f30e63ac2'),
+ 'book_authors': ['Чан Джейми'],
+ 'book_discount_price': 807.0,
+ 'book_link': 'https://www.labirint.ru/books/793071/',
+ 'book_name': 'Python. Быстрый старт',
+ 'book_price': 1035.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/789308/>
+{'_id': ObjectId('6114174020ebc54f30e63ac3'),
+ 'book_authors': ['Стивенсон Бен'],
+ 'book_discount_price': 917.0,
+ 'book_link': 'https://www.labirint.ru/books/789308/',
+ 'book_name': 'Python. Сборник упражнений',
+ 'book_price': 1223.0,
+ 'book_rate': 10.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/764415/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/733470/>
+{'_id': ObjectId('6114174020ebc54f30e63ac4'),
+ 'book_authors': ['Мэтиз Эрик'],
+ 'book_discount_price': 1304.0,
+ 'book_link': 'https://www.labirint.ru/books/733470/',
+ 'book_name': 'Изучаем Python. Программирование игр, визуализация данных, '
+              'веб-приложения',
+ 'book_price': 1672.0,
+ 'book_rate': 8.93,
+ 'data_available_status': '1'}
+2021-08-11 23:30:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/799392/>
+{'_id': ObjectId('6114174020ebc54f30e63ac5'),
+ 'book_authors': ['Хилпиш Ив'],
+ 'book_discount_price': 5186.0,
+ 'book_link': 'https://www.labirint.ru/books/799392/',
+ 'book_name': 'Python для финансовых расчетов',
+ 'book_price': 6914.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/577069/>
+{'_id': ObjectId('6114174020ebc54f30e63ac6'),
+ 'book_authors': ['Рашка Себастьян'],
+ 'book_discount_price': 1988.0,
+ 'book_link': 'https://www.labirint.ru/books/577069/',
+ 'book_name': 'Python и машинное обучение',
+ 'book_price': 2651.0,
+ 'book_rate': 5.58,
+ 'data_available_status': '1'}
+2021-08-11 23:30:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/672736/>
+{'_id': ObjectId('6114174020ebc54f30e63ac7'),
+ 'book_authors': ['Седер Наоми'],
+ 'book_discount_price': 1155.0,
+ 'book_link': 'https://www.labirint.ru/books/672736/',
+ 'book_name': 'Python. Экспресс-курс',
+ 'book_price': 1481.0,
+ 'book_rate': 9.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/812753/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/609684/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/764415/>
+{'_id': ObjectId('6114174020ebc54f30e63ac8'),
+ 'book_authors': ['Мюллер Джон Пол', 'Массарон Лука'],
+ 'book_discount_price': 1556.0,
+ 'book_link': 'https://www.labirint.ru/books/764415/',
+ 'book_name': 'Python и наука о данных для чайников',
+ 'book_price': 2075.0,
+ 'book_rate': 7.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/435407/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/812753/>
+{'_id': ObjectId('6114174020ebc54f30e63ac9'),
+ 'book_authors': ['Лейси Никола'],
+ 'book_discount_price': 987.0,
+ 'book_link': 'https://www.labirint.ru/books/812753/',
+ 'book_name': 'Python, например',
+ 'book_price': 1265.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/609684/>
+{'_id': ObjectId('6114174020ebc54f30e63aca'),
+ 'book_authors': ['Плас Дж. Вандер'],
+ 'book_discount_price': 1513.0,
+ 'book_link': 'https://www.labirint.ru/books/609684/',
+ 'book_name': 'Python для сложных задач. Наука о данных и машинное обучение',
+ 'book_price': 1940.0,
+ 'book_rate': 6.24,
+ 'data_available_status': '1'}
+2021-08-11 23:30:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/435407/>
+{'_id': ObjectId('6114174020ebc54f30e63acb'),
+ 'book_authors': ['Саммерфилд Марк'],
+ 'book_discount_price': 917.0,
+ 'book_link': 'https://www.labirint.ru/books/435407/',
+ 'book_name': 'Python на практике',
+ 'book_price': 1223.0,
+ 'book_rate': 8.57,
+ 'data_available_status': '1'}
+2021-08-11 23:30:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/512926/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/703167/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/751513/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/512926/>
+{'_id': ObjectId('6114174120ebc54f30e63acc'),
+ 'book_authors': ['Лутц Марк'],
+ 'book_discount_price': 783.0,
+ 'book_link': 'https://www.labirint.ru/books/512926/',
+ 'book_name': 'Python. Карманный справочник',
+ 'book_price': 1044.0,
+ 'book_rate': 8.62,
+ 'data_available_status': '1'}
+2021-08-11 23:30:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/802158/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/703167/>
+{'_id': ObjectId('6114174120ebc54f30e63acd'),
+ 'book_authors': ['Мюллер Джон Пол'],
+ 'book_discount_price': 1296.0,
+ 'book_link': 'https://www.labirint.ru/books/703167/',
+ 'book_name': 'Python для чайников',
+ 'book_price': 1728.0,
+ 'book_rate': 8.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/751513/>
+{'_id': ObjectId('6114174120ebc54f30e63ace'),
+ 'book_authors': ['Дейтел Пол Дж.', 'Дейтел Харви'],
+ 'book_discount_price': 2715.0,
+ 'book_link': 'https://www.labirint.ru/books/751513/',
+ 'book_name': 'Python. Искусственный интеллект, большие данные и облачные '
+              'вычисления',
+ 'book_price': 3481.0,
+ 'book_rate': 3.5,
+ 'data_available_status': '1'}
+2021-08-11 23:30:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/802158/>
+{'_id': ObjectId('6114174120ebc54f30e63acf'),
+ 'book_authors': ['Яворски Михаил', 'Зиаде Терек'],
+ 'book_discount_price': 2210.0,
+ 'book_link': 'https://www.labirint.ru/books/802158/',
+ 'book_name': 'Python. Лучшие практики и инструменты',
+ 'book_price': 2833.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/700999/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/516656/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/708689/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/700999/>
+{'_id': ObjectId('6114174120ebc54f30e63ad0'),
+ 'book_authors': ['Шуманн Ханс-Георг'],
+ 'book_discount_price': 1060.0,
+ 'book_link': 'https://www.labirint.ru/books/700999/',
+ 'book_name': 'Python для детей',
+ 'book_price': 1631.0,
+ 'book_rate': 9.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/516656/>
+{'_id': ObjectId('6114174120ebc54f30e63ad1'),
+ 'book_authors': ['Рамальо Лучано'],
+ 'book_discount_price': 1530.0,
+ 'book_link': 'https://www.labirint.ru/books/516656/',
+ 'book_name': 'Python. К вершинам мастерства',
+ 'book_price': 2040.0,
+ 'book_rate': 7.94,
+ 'data_available_status': '1'}
+2021-08-11 23:30:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/708689/>
+{'_id': ObjectId('6114174120ebc54f30e63ad2'),
+ 'book_authors': ['Бизли Дэвид', 'Джонс Брайан К.'],
+ 'book_discount_price': 2447.0,
+ 'book_link': 'https://www.labirint.ru/books/708689/',
+ 'book_name': 'Python. Книга Рецептов',
+ 'book_price': 3263.0,
+ 'book_rate': 9.6,
+ 'data_available_status': '1'}
+2021-08-11 23:30:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/718860/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/682197/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/574609/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/718860/>
+{'_id': ObjectId('6114174120ebc54f30e63ad3'),
+ 'book_authors': ['Маккини Уэс'],
+ 'book_discount_price': 1988.0,
+ 'book_link': 'https://www.labirint.ru/books/718860/',
+ 'book_name': 'Python и анализ данных',
+ 'book_price': 2651.0,
+ 'book_rate': 6.3,
+ 'data_available_status': '1'}
+2021-08-11 23:30:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/682197/>
+{'_id': ObjectId('6114174120ebc54f30e63ad4'),
+ 'book_authors': ['Бенгфорт Бенджамин', 'Охеда Тони', 'Билбро Ребекка'],
+ 'book_discount_price': 1129.0,
+ 'book_link': 'https://www.labirint.ru/books/682197/',
+ 'book_name': 'Прикладной анализ текстовых данных на Python. Машинное обучение '
+              'и создание приложений обработки',
+ 'book_price': 1447.0,
+ 'book_rate': 3.36,
+ 'data_available_status': '1'}
+2021-08-11 23:30:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/620685/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/574609/>
+{'_id': ObjectId('6114174220ebc54f30e63ad5'),
+ 'book_authors': ['Пэйн Брайсон'],
+ 'book_discount_price': 1009.0,
+ 'book_link': 'https://www.labirint.ru/books/574609/',
+ 'book_name': 'Python для детей и родителей',
+ 'book_price': 1009.0,
+ 'book_rate': 9.52,
+ 'data_available_status': '1'}
+2021-08-11 23:30:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/620685/>
+{'_id': ObjectId('6114174220ebc54f30e63ad6'),
+ 'book_authors': ['Бонцанини Марко'],
+ 'book_discount_price': 1223.0,
+ 'book_link': 'https://www.labirint.ru/books/620685/',
+ 'book_name': 'Анализ социальных медиа на Python',
+ 'book_price': 1631.0,
+ 'book_rate': 5.27,
+ 'data_available_status': '1'}
+2021-08-11 23:30:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/533405/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/641696/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/784236/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/751094/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.labirint.ru/books/531881/> from <GET https://www.labirint.ru/books/320168/>
+2021-08-11 23:30:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/533405/>
+{'_id': ObjectId('6114174220ebc54f30e63ad7'),
+ 'book_authors': ['Митчелл Райан'],
+ 'book_discount_price': 994.0,
+ 'book_link': 'https://www.labirint.ru/books/533405/',
+ 'book_name': 'Скрапинг веб-сайтов с помощью Python. Сбор данных из '
+              'современного интернета',
+ 'book_price': 1325.0,
+ 'book_rate': 7.43,
+ 'data_available_status': '1'}
+2021-08-11 23:30:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/641696/>
+{'_id': ObjectId('6114174220ebc54f30e63ad8'),
+ 'book_authors': ['Персиваль Гарри'],
+ 'book_discount_price': 2294.0,
+ 'book_link': 'https://www.labirint.ru/books/641696/',
+ 'book_name': 'Python. Разработка на основе тестирования',
+ 'book_price': 3059.0,
+ 'book_rate': 7.75,
+ 'data_available_status': '1'}
+2021-08-11 23:30:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.labirint.ru/books/662231/> from <GET https://www.labirint.ru/books/493394/>
+2021-08-11 23:30:26 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.labirint.ru/books/662231/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2021-08-11 23:30:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/784236/>
+{'_id': ObjectId('6114174220ebc54f30e63ad9'),
+ 'book_authors': ['Перрен Жан-Жорж'],
+ 'book_discount_price': 2600.0,
+ 'book_link': 'https://www.labirint.ru/books/784236/',
+ 'book_name': 'Spark в действии. С примерами Java, Python и Scala',
+ 'book_price': 3467.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/751094/>
+{'_id': ObjectId('6114174220ebc54f30e63ada'),
+ 'book_authors': ['Омельяненко Ярослав'],
+ 'book_discount_price': 1530.0,
+ 'book_link': 'https://www.labirint.ru/books/751094/',
+ 'book_name': 'Эволюционные нейросети на языке Python',
+ 'book_price': 2040.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.labirint.ru/books/733470/> from <GET https://www.labirint.ru/books/593039/>
+2021-08-11 23:30:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/654838/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.labirint.ru/books/593039/> from <GET https://www.labirint.ru/books/556777/>
+2021-08-11 23:30:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/746802/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.labirint.ru/books/718860/> from <GET https://www.labirint.ru/books/486755/>
+2021-08-11 23:30:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/654838/>
+{'_id': ObjectId('6114174220ebc54f30e63adb'),
+ 'book_authors': ['Бейдер Дэн'],
+ 'book_discount_price': 1168.0,
+ 'book_link': 'https://www.labirint.ru/books/654838/',
+ 'book_name': 'Чистый Python. Тонкости программирования для профи',
+ 'book_price': 1498.0,
+ 'book_rate': 7.5,
+ 'data_available_status': '1'}
+2021-08-11 23:30:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/773613/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/710005/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/746802/>
+{'_id': ObjectId('6114174220ebc54f30e63adc'),
+ 'book_authors': ['Седжвик Роберт', 'Дондеро Роберт', 'Уэйн Кевин'],
+ 'book_discount_price': 1944.0,
+ 'book_link': 'https://www.labirint.ru/books/746802/',
+ 'book_name': 'Программирование на Python. Базовый курс',
+ 'book_price': 2592.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/773613/>
+{'_id': ObjectId('6114174220ebc54f30e63add'),
+ 'book_authors': ['Корягин Андрей Владимирович', 'Корягина Алиса Витальевна'],
+ 'book_discount_price': 673.0,
+ 'book_link': 'https://www.labirint.ru/books/773613/',
+ 'book_name': 'Python. Великое программирование в Minecraft',
+ 'book_price': 863.0,
+ 'book_rate': 9.04,
+ 'data_available_status': '1'}
+2021-08-11 23:30:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.labirint.ru/books/772920/> from <GET https://www.labirint.ru/books/678098/>
+2021-08-11 23:30:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/788336/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/710005/>
+{'_id': ObjectId('6114174320ebc54f30e63ade'),
+ 'book_authors': ['Равичандиран Судхарсан'],
+ 'book_discount_price': 1173.0,
+ 'book_link': 'https://www.labirint.ru/books/710005/',
+ 'book_name': 'Глубокое обучение с подкреплением на Python. OpenAI Gym и '
+              'TensorFlow для профи',
+ 'book_price': 1504.0,
+ 'book_rate': 4.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/788336/>
+{'_id': ObjectId('6114174320ebc54f30e63adf'),
+ 'book_authors': ['Вейдман Сет'],
+ 'book_discount_price': 2295.0,
+ 'book_link': 'https://www.labirint.ru/books/788336/',
+ 'book_name': 'Глубокое обучение. Легкая разработка проектов на Python',
+ 'book_price': 2942.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/545201/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/545201/>
+{'_id': ObjectId('6114174320ebc54f30e63ae0'),
+ 'book_authors': ['Слаткин Бретт'],
+ 'book_discount_price': 2075.0,
+ 'book_link': 'https://www.labirint.ru/books/545201/',
+ 'book_name': 'Секреты Python. 59 рекомендаций по написанию эффективного кода',
+ 'book_price': 2075.0,
+ 'book_rate': 4.33,
+ 'data_available_status': '0'}
+2021-08-11 23:30:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/575392/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/512927/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/637513/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/713013/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/575392/>
+{'_id': ObjectId('6114174320ebc54f30e63ae1'),
+ 'book_authors': ['Бриггс Джейсон'],
+ 'book_discount_price': 1309.0,
+ 'book_link': 'https://www.labirint.ru/books/575392/',
+ 'book_name': 'Python для детей. Самоучитель по программированию',
+ 'book_price': 1309.0,
+ 'book_rate': 9.03,
+ 'data_available_status': '0'}
+2021-08-11 23:30:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/686984/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/512927/>
+{'_id': ObjectId('6114174320ebc54f30e63ae2'),
+ 'book_authors': ['Чан Уэсли'],
+ 'book_discount_price': 3811.0,
+ 'book_link': 'https://www.labirint.ru/books/512927/',
+ 'book_name': 'Python. Создание приложений. Библиотека профессионала',
+ 'book_price': 3811.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '0'}
+2021-08-11 23:30:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/637513/>
+{'_id': ObjectId('6114174320ebc54f30e63ae3'),
+ 'book_authors': ['Вордерман Кэрол', 'Квигли Клэр', 'Стили Крэйг'],
+ 'book_discount_price': 2067.0,
+ 'book_link': 'https://www.labirint.ru/books/637513/',
+ 'book_name': 'Программирование на Python. Иллюстрированное руководство для '
+              'детей',
+ 'book_price': 2067.0,
+ 'book_rate': 9.06,
+ 'data_available_status': '0'}
+2021-08-11 23:30:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/713013/>
+{'_id': ObjectId('6114174320ebc54f30e63ae4'),
+ 'book_authors': ['Лутц Марк'],
+ 'book_discount_price': 4322.0,
+ 'book_link': 'https://www.labirint.ru/books/713013/',
+ 'book_name': 'Изучаем Python. Том 1',
+ 'book_price': 4322.0,
+ 'book_rate': 9.0,
+ 'data_available_status': '3'}
+2021-08-11 23:30:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/10000623/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/686984/>
+{'_id': ObjectId('6114174320ebc54f30e63ae5'),
+ 'book_authors': ['Кольцов Дмитрий Викторович'],
+ 'book_discount_price': 802.0,
+ 'book_link': 'https://www.labirint.ru/books/686984/',
+ 'book_name': 'Python: создаем программы и игры',
+ 'book_price': 802.0,
+ 'book_rate': 8.0,
+ 'data_available_status': '0'}
+2021-08-11 23:30:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/772920/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/10000623/>
+{'_id': ObjectId('6114174320ebc54f30e63ae6'),
+ 'book_authors': [],
+ 'book_discount_price': 399.0,
+ 'book_link': 'https://www.labirint.ru/books/10000623/',
+ 'book_name': 'Python для детей. Самоучитель по программированию',
+ 'book_price': 399.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '3'}
+2021-08-11 23:30:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/10000537/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/653364/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/772920/>
+{'_id': ObjectId('6114174320ebc54f30e63ae7'),
+ 'book_authors': ['Рашка Себастьян', 'Мирджалили Вахид'],
+ 'book_discount_price': 5186.0,
+ 'book_link': 'https://www.labirint.ru/books/772920/',
+ 'book_name': 'Python и машинное обучение. Машинное и глубокое обучение с '
+              'использованием Python, scikit-learn',
+ 'book_price': 5186.0,
+ 'book_rate': 4.0,
+ 'data_available_status': '3'}
+2021-08-11 23:30:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/749460/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/10000537/>
+{'_id': ObjectId('6114174420ebc54f30e63ae8'),
+ 'book_authors': [],
+ 'book_discount_price': 399.0,
+ 'book_link': 'https://www.labirint.ru/books/10000537/',
+ 'book_name': 'Программируем с Minecraft. Создай свой мир с помощью Python',
+ 'book_price': 399.0,
+ 'book_rate': 10.0,
+ 'data_available_status': '3'}
+2021-08-11 23:30:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/653364/>
+{'_id': ObjectId('6114174420ebc54f30e63ae9'),
+ 'book_authors': ['Нуньес-Иглесиас Хуан',
+                  'Дэншоу Харриет',
+                  'Ван дер Уолт Штефан'],
+ 'book_discount_price': 1453.0,
+ 'book_link': 'https://www.labirint.ru/books/653364/',
+ 'book_name': 'Элегантный SciPy',
+ 'book_price': 1937.0,
+ 'book_rate': 5.25,
+ 'data_available_status': '1'}
+2021-08-11 23:30:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/758117/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/811333/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/749460/>
+{'_id': ObjectId('6114174420ebc54f30e63aea'),
+ 'book_authors': ['Харрисон Мэтт'],
+ 'book_discount_price': 1038.0,
+ 'book_link': 'https://www.labirint.ru/books/749460/',
+ 'book_name': 'Машинное обучение. Карманный справочник. Краткое руководство по '
+              'методам структурированного машинного',
+ 'book_price': 1384.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/758117/>
+{'_id': ObjectId('6114174420ebc54f30e63aeb'),
+ 'book_authors': ['Грас Джоэл'],
+ 'book_discount_price': 798.0,
+ 'book_link': 'https://www.labirint.ru/books/758117/',
+ 'book_name': 'Data Science. Наука о данных с нуля',
+ 'book_price': 1064.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/755873/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:28 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.labirint.ru/books/663315/> from <GET https://www.labirint.ru/books/531881/>
+2021-08-11 23:30:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/811333/>
+{'_id': ObjectId('6114174420ebc54f30e63aec'),
+ 'book_authors': ['Брюс Питер', 'Гедек Питер', 'Брюс Эндрю'],
+ 'book_discount_price': 788.0,
+ 'book_link': 'https://www.labirint.ru/books/811333/',
+ 'book_name': 'Практическая статистика для специалистов Data Science',
+ 'book_price': 1050.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/755873/>
+{'_id': ObjectId('6114174420ebc54f30e63aed'),
+ 'book_authors': ['Хобсон Лейн', 'Коул Ховард', 'Ханнес Хапке'],
+ 'book_discount_price': 2309.0,
+ 'book_link': 'https://www.labirint.ru/books/755873/',
+ 'book_name': 'Обработка естественного языка в действии',
+ 'book_price': 2960.0,
+ 'book_rate': 10.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/698332/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/647608/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/712995/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/676178/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/698332/>
+{'_id': ObjectId('6114174420ebc54f30e63aee'),
+ 'book_authors': ['Жуков Роман Александрович'],
+ 'book_discount_price': 1536.0,
+ 'book_link': 'https://www.labirint.ru/books/698332/',
+ 'book_name': 'Язык программирования Python. Практикум. Учебное пособие',
+ 'book_price': 2048.0,
+ 'book_rate': 5.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/612988/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/647608/>
+{'_id': ObjectId('6114174420ebc54f30e63aef'),
+ 'book_authors': ['Александрова Ирина Александровна',
+                  'Хрипунова Марина Борисовна',
+                  'Балджы Анна Сергеевна'],
+ 'book_discount_price': 447.0,
+ 'book_link': 'https://www.labirint.ru/books/647608/',
+ 'book_name': 'Математика на Python. Часть 1. Элементы линейной алгебры',
+ 'book_price': 596.0,
+ 'book_rate': 4.8,
+ 'data_available_status': '1'}
+2021-08-11 23:30:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/712995/>
+{'_id': ObjectId('6114174420ebc54f30e63af0'),
+ 'book_authors': ['Жуков Роман Александрович'],
+ 'book_discount_price': 1439.0,
+ 'book_link': 'https://www.labirint.ru/books/712995/',
+ 'book_name': 'Язык программирования Python: практикум. Учебное пособие',
+ 'book_price': 1919.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/676178/>
+{'_id': ObjectId('6114174520ebc54f30e63af1'),
+ 'book_authors': ['Гаско Рик'],
+ 'book_discount_price': 645.0,
+ 'book_link': 'https://www.labirint.ru/books/676178/',
+ 'book_name': 'Простой Python просто с нуля',
+ 'book_price': 860.0,
+ 'book_rate': 2.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/702506/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/780278/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/798004/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/612988/>
+{'_id': ObjectId('6114174520ebc54f30e63af2'),
+ 'book_authors': ['Груздев Артем Владимирович'],
+ 'book_discount_price': 2600.0,
+ 'book_link': 'https://www.labirint.ru/books/612988/',
+ 'book_name': 'Прогнозное моделирование в IBM SPSS Statistics, R и Python. '
+              'Метод деревьев решений и случайный лес',
+ 'book_price': 3467.0,
+ 'book_rate': 5.33,
+ 'data_available_status': '1'}
+2021-08-11 23:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/774752/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/665631/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/702249/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/773484/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/702506/>
+{'_id': ObjectId('6114174520ebc54f30e63af3'),
+ 'book_authors': ['Дауни Аллен Б.'],
+ 'book_discount_price': 845.0,
+ 'book_link': 'https://www.labirint.ru/books/702506/',
+ 'book_name': 'Изучение сложных систем с помощью Python.',
+ 'book_price': 1127.0,
+ 'book_rate': 4.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/780278/>
+{'_id': ObjectId('6114174520ebc54f30e63af4'),
+ 'book_authors': ['Криволапов Сергей Яковлевич', 'Хрипунова Марина Борисовна'],
+ 'book_discount_price': 1604.0,
+ 'book_link': 'https://www.labirint.ru/books/780278/',
+ 'book_name': 'Математика на Python. Учебник',
+ 'book_price': 2139.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/798004/>
+{'_id': ObjectId('6114174520ebc54f30e63af5'),
+ 'book_authors': ['Гаско Рик'],
+ 'book_discount_price': 769.0,
+ 'book_link': 'https://www.labirint.ru/books/798004/',
+ 'book_name': 'Простой Python для опытных программистов',
+ 'book_price': 1025.0,
+ 'book_rate': 1.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/774752/>
+{'_id': ObjectId('6114174520ebc54f30e63af6'),
+ 'book_authors': ['Гуриков Сергей Ростиславович'],
+ 'book_discount_price': 3664.0,
+ 'book_link': 'https://www.labirint.ru/books/774752/',
+ 'book_name': 'Основы алгоритмизации и программирования на PythonОсновы '
+              'алгоритмизации и программирования на Python',
+ 'book_price': 4885.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/665631/>
+{'_id': ObjectId('6114174620ebc54f30e63af7'),
+ 'book_authors': ['Поляков Константин Юрьевич'],
+ 'book_discount_price': 464.0,
+ 'book_link': 'https://www.labirint.ru/books/665631/',
+ 'book_name': 'Программирование. Python. C++. Часть 4. Учебное пособие',
+ 'book_price': 714.0,
+ 'book_rate': 4.5,
+ 'data_available_status': '1'}
+2021-08-11 23:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/702249/>
+{'_id': ObjectId('6114174620ebc54f30e63af8'),
+ 'book_authors': ['Дэвидсон-Пайлон Кэмерон'],
+ 'book_discount_price': 1523.0,
+ 'book_link': 'https://www.labirint.ru/books/702249/',
+ 'book_name': 'Вероятностное программирование на Python. Байесовский вывод и '
+              'алгоритмы',
+ 'book_price': 1953.0,
+ 'book_rate': 10.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/773484/>
+{'_id': ObjectId('6114174620ebc54f30e63af9'),
+ 'book_authors': ['Шакирьянов Эдуард Данисович'],
+ 'book_discount_price': 396.0,
+ 'book_link': 'https://www.labirint.ru/books/773484/',
+ 'book_name': 'Компьютерное зрение на Python. Первые шаги',
+ 'book_price': 609.0,
+ 'book_rate': 10.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/750383/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/762770/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/446705/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/665630/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/692313/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/709200/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/665628/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/684144/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/750383/>
+{'_id': ObjectId('6114174620ebc54f30e63afa'),
+ 'book_authors': ['Лонца Андреа'],
+ 'book_discount_price': 1530.0,
+ 'book_link': 'https://www.labirint.ru/books/750383/',
+ 'book_name': 'Алгоритмы обучения с подкреплением на Python',
+ 'book_price': 2040.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/762770/>
+{'_id': ObjectId('6114174620ebc54f30e63afb'),
+ 'book_authors': ['Сонг Джимми'],
+ 'book_discount_price': 3242.0,
+ 'book_link': 'https://www.labirint.ru/books/762770/',
+ 'book_name': 'Python для программирования криптовалют',
+ 'book_price': 4322.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/446705/>
+{'_id': ObjectId('6114174620ebc54f30e63afc'),
+ 'book_authors': ['Гринберг Мигель'],
+ 'book_discount_price': 994.0,
+ 'book_link': 'https://www.labirint.ru/books/446705/',
+ 'book_name': 'Разработка веб-приложений с использованием Flask на языке '
+              'Python',
+ 'book_price': 1325.0,
+ 'book_rate': 8.6,
+ 'data_available_status': '1'}
+2021-08-11 23:30:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/665630/>
+{'_id': ObjectId('6114174620ebc54f30e63afd'),
+ 'book_authors': ['Поляков Константин Юрьевич'],
+ 'book_discount_price': 464.0,
+ 'book_link': 'https://www.labirint.ru/books/665630/',
+ 'book_name': 'Программирование. Python. C++. Часть 3. Учебное пособие',
+ 'book_price': 714.0,
+ 'book_rate': 2.25,
+ 'data_available_status': '1'}
+2021-08-11 23:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/692313/>
+{'_id': ObjectId('6114174720ebc54f30e63afe'),
+ 'book_authors': ['Джозеф Лентин'],
+ 'book_discount_price': 1223.0,
+ 'book_link': 'https://www.labirint.ru/books/692313/',
+ 'book_name': 'Изучение робототехники с помощью Python',
+ 'book_price': 1631.0,
+ 'book_rate': 10.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/709200/>
+{'_id': ObjectId('6114174720ebc54f30e63aff'),
+ 'book_authors': ['Элбон Крис'],
+ 'book_discount_price': 764.0,
+ 'book_link': 'https://www.labirint.ru/books/709200/',
+ 'book_name': 'Машинное обучение с использованием Python. Сборник рецептов',
+ 'book_price': 1019.0,
+ 'book_rate': 4.6,
+ 'data_available_status': '1'}
+2021-08-11 23:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/665628/>
+{'_id': ObjectId('6114174720ebc54f30e63b00'),
+ 'book_authors': ['Поляков Константин Юрьевич'],
+ 'book_discount_price': 464.0,
+ 'book_link': 'https://www.labirint.ru/books/665628/',
+ 'book_name': 'Программирование. Python. C++. Часть 1. Учебное пособие',
+ 'book_price': 714.0,
+ 'book_rate': 7.8,
+ 'data_available_status': '1'}
+2021-08-11 23:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/684144/>
+{'_id': ObjectId('6114174720ebc54f30e63b01'),
+ 'book_authors': ['Дронов Владимир Александрович'],
+ 'book_discount_price': 1083.0,
+ 'book_link': 'https://www.labirint.ru/books/684144/',
+ 'book_name': 'Django 2.1. Практика создания веб-сайтов на Python',
+ 'book_price': 1444.0,
+ 'book_rate': 8.33,
+ 'data_available_status': '1'}
+2021-08-11 23:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/659624/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/774216/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/528211/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/762771/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/612986/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/800781/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/665629/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/784210/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/659624/>
+{'_id': ObjectId('6114174720ebc54f30e63b02'),
+ 'book_authors': ['Дауни Аллен Б.'],
+ 'book_discount_price': 994.0,
+ 'book_link': 'https://www.labirint.ru/books/659624/',
+ 'book_name': 'Байесовские модели. Байесовская статистика на языке Python',
+ 'book_price': 1325.0,
+ 'book_rate': 9.33,
+ 'data_available_status': '1'}
+2021-08-11 23:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/774216/>
+{'_id': ObjectId('6114174720ebc54f30e63b03'),
+ 'book_authors': ['Борзунов Сергей Викторович', 'Кургалин Сергей Дмитриевич'],
+ 'book_discount_price': 3455.0,
+ 'book_link': 'https://www.labirint.ru/books/774216/',
+ 'book_name': 'Алгебра и геометрия с примерами на Python. Учебное пособие',
+ 'book_price': 4607.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/528211/>
+{'_id': ObjectId('6114174720ebc54f30e63b04'),
+ 'book_authors': ['Солем Ян Эрик'],
+ 'book_discount_price': 1070.0,
+ 'book_link': 'https://www.labirint.ru/books/528211/',
+ 'book_name': 'Программирование компьютерного зрения на языке Python',
+ 'book_price': 1427.0,
+ 'book_rate': 8.33,
+ 'data_available_status': '1'}
+2021-08-11 23:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/762771/>
+{'_id': ObjectId('6114174720ebc54f30e63b05'),
+ 'book_authors': ['Пател Анкур'],
+ 'book_discount_price': 2592.0,
+ 'book_link': 'https://www.labirint.ru/books/762771/',
+ 'book_name': 'Прикладное машинное обучение без учителя с использованием '
+              'Python',
+ 'book_price': 3456.0,
+ 'book_rate': 3.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/612986/>
+{'_id': ObjectId('6114174720ebc54f30e63b06'),
+ 'book_authors': ['Шарден Бастиан', 'Боскетти Альберто', 'Массарон Лука'],
+ 'book_discount_price': 1223.0,
+ 'book_link': 'https://www.labirint.ru/books/612986/',
+ 'book_name': 'Крупномасштабное машинное обучение вместе с Python',
+ 'book_price': 1631.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/800781/>
+{'_id': ObjectId('6114174720ebc54f30e63b07'),
+ 'book_authors': ['Васильев Юрий'],
+ 'book_discount_price': 1229.0,
+ 'book_link': 'https://www.labirint.ru/books/800781/',
+ 'book_name': 'Обработка естественного языка. Python и spaCy на практике',
+ 'book_price': 1576.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/665629/>
+{'_id': ObjectId('6114174720ebc54f30e63b08'),
+ 'book_authors': ['Поляков Константин Юрьевич'],
+ 'book_discount_price': 464.0,
+ 'book_link': 'https://www.labirint.ru/books/665629/',
+ 'book_name': 'Программирование. Python. C++. Часть 2. Учебное пособие',
+ 'book_price': 714.0,
+ 'book_rate': 4.8,
+ 'data_available_status': '1'}
+2021-08-11 23:30:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/784210/>
+{'_id': ObjectId('6114174820ebc54f30e63b09'),
+ 'book_authors': ['Хиллард Дейн'],
+ 'book_discount_price': 1888.0,
+ 'book_link': 'https://www.labirint.ru/books/784210/',
+ 'book_name': 'Секреты Python Pro',
+ 'book_price': 2421.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/761250/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/735072/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/749462/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/590528/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/783905/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/805903/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/668926/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/805904/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/761250/>
+{'_id': ObjectId('6114174820ebc54f30e63b0a'),
+ 'book_authors': ['Дронов Владимир Александрович'],
+ 'book_discount_price': 1100.0,
+ 'book_link': 'https://www.labirint.ru/books/761250/',
+ 'book_name': 'Django 3.0. Практика создания веб-сайтов на Python',
+ 'book_price': 1467.0,
+ 'book_rate': 6.33,
+ 'data_available_status': '1'}
+2021-08-11 23:30:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/735072/>
+{'_id': ObjectId('6114174820ebc54f30e63b0b'),
+ 'book_authors': ['Ленц Мориц'],
+ 'book_discount_price': 845.0,
+ 'book_link': 'https://www.labirint.ru/books/735072/',
+ 'book_name': 'Python. Непрерывная интеграция и доставка',
+ 'book_price': 1127.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/749462/>
+{'_id': ObjectId('6114174820ebc54f30e63b0c'),
+ 'book_authors': ['Фримен Эрик'],
+ 'book_discount_price': 1944.0,
+ 'book_link': 'https://www.labirint.ru/books/749462/',
+ 'book_name': 'Учимся программировать с примерами на Python',
+ 'book_price': 2592.0,
+ 'book_rate': 6.5,
+ 'data_available_status': '1'}
+2021-08-11 23:30:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/590528/>
+{'_id': ObjectId('6114174820ebc54f30e63b0d'),
+ 'book_authors': ['Хайнеман Джордж', 'Селков Стэнли', 'Поллис Гари'],
+ 'book_discount_price': 2592.0,
+ 'book_link': 'https://www.labirint.ru/books/590528/',
+ 'book_name': 'Алгоритмы. Справочник с примерами на C, C++, Java и Python',
+ 'book_price': 3456.0,
+ 'book_rate': 10.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/783905/>
+{'_id': ObjectId('6114174820ebc54f30e63b0e'),
+ 'book_authors': ['Васильев Алексей Николаевич'],
+ 'book_discount_price': 902.0,
+ 'book_link': 'https://www.labirint.ru/books/783905/',
+ 'book_name': 'Программирование на Python в примерах и задачах',
+ 'book_price': 1157.0,
+ 'book_rate': 9.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/805903/>
+{'_id': ObjectId('6114174820ebc54f30e63b0f'),
+ 'book_authors': ['Постолит Анатолий Владимирович'],
+ 'book_discount_price': 767.0,
+ 'book_link': 'https://www.labirint.ru/books/805903/',
+ 'book_name': 'Основы искусственного интеллекта в примерах на Python',
+ 'book_price': 1022.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/search/python/?stype=0&page=3> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/668926/>
+{'_id': ObjectId('6114174820ebc54f30e63b10'),
+ 'book_authors': ['Златопольский Дмитрий Михайлович'],
+ 'book_discount_price': 620.0,
+ 'book_link': 'https://www.labirint.ru/books/668926/',
+ 'book_name': 'Основы программирования на языке Python',
+ 'book_price': 827.0,
+ 'book_rate': 8.56,
+ 'data_available_status': '1'}
+2021-08-11 23:30:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/805904/>
+{'_id': ObjectId('6114174820ebc54f30e63b11'),
+ 'book_authors': ['Постолит Анатолий Владимирович'],
+ 'book_discount_price': 714.0,
+ 'book_link': 'https://www.labirint.ru/books/805904/',
+ 'book_name': 'Python, Django и PyCharm для начинающих',
+ 'book_price': 952.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/701052/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/662231/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/663315/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/645742/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/701052/>
+{'_id': ObjectId('6114174920ebc54f30e63b12'),
+ 'book_authors': ['Шоу Зед А.'],
+ 'book_discount_price': 707.0,
+ 'book_link': 'https://www.labirint.ru/books/701052/',
+ 'book_name': 'Легкий способ выучить Python 3',
+ 'book_price': 906.0,
+ 'book_rate': 7.55,
+ 'data_available_status': '1'}
+2021-08-11 23:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/667550/> (referer: https://www.labirint.ru/search/python/?stype=0&page=2)
+2021-08-11 23:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/739701/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/662231/>
+{'_id': ObjectId('6114174920ebc54f30e63b13'),
+ 'book_authors': ['Прохоренок Николай Анатольевич',
+                  'Дронов Владимир Александрович'],
+ 'book_discount_price': 885.0,
+ 'book_link': 'https://www.labirint.ru/books/662231/',
+ 'book_name': 'Python 3. Самое необходимое',
+ 'book_price': 1180.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/565114/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/663315/>
+{'_id': ObjectId('6114174920ebc54f30e63b14'),
+ 'book_authors': ['Прохоренок Николай Анатольевич',
+                  'Дронов Владимир Александрович'],
+ 'book_discount_price': 1202.0,
+ 'book_link': 'https://www.labirint.ru/books/663315/',
+ 'book_name': 'Python 3 и PyQt 5. Разработка приложений. 2-е издание',
+ 'book_price': 1603.0,
+ 'book_rate': 8.6,
+ 'data_available_status': '1'}
+2021-08-11 23:30:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/645742/>
+{'_id': ObjectId('6114174920ebc54f30e63b15'),
+ 'book_authors': ['Шолле Франсуа'],
+ 'book_discount_price': 1060.0,
+ 'book_link': 'https://www.labirint.ru/books/645742/',
+ 'book_name': 'Глубокое обучение на Python',
+ 'book_price': 1359.0,
+ 'book_rate': 8.5,
+ 'data_available_status': '1'}
+2021-08-11 23:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/498681/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/667550/>
+{'_id': ObjectId('6114174920ebc54f30e63b16'),
+ 'book_authors': ['Мартелли Алекс', 'Холден Стив', 'Рейвенскрофт Анна'],
+ 'book_discount_price': 3242.0,
+ 'book_link': 'https://www.labirint.ru/books/667550/',
+ 'book_name': 'Python. Справочник. Полное описание языка',
+ 'book_price': 4322.0,
+ 'book_rate': 10.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/560587/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/739701/>
+{'_id': ObjectId('6114174920ebc54f30e63b17'),
+ 'book_authors': ['Шоу Зед А.'],
+ 'book_discount_price': 707.0,
+ 'book_link': 'https://www.labirint.ru/books/739701/',
+ 'book_name': 'Легкий способ выучить Python 3 еще глубже',
+ 'book_price': 906.0,
+ 'book_rate': 10.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/565114/>
+{'_id': ObjectId('6114174920ebc54f30e63b18'),
+ 'book_authors': ['Дауни Аллен Б.'],
+ 'book_discount_price': 620.0,
+ 'book_link': 'https://www.labirint.ru/books/565114/',
+ 'book_name': 'Цифровая обработка сигналов на языке Python',
+ 'book_price': 827.0,
+ 'book_rate': 8.33,
+ 'data_available_status': '1'}
+2021-08-11 23:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/728419/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/498681/>
+{'_id': ObjectId('6114174a20ebc54f30e63b19'),
+ 'book_authors': ['Коэльо Луис Педро', 'Ричарт Вилли'],
+ 'book_discount_price': 1070.0,
+ 'book_link': 'https://www.labirint.ru/books/498681/',
+ 'book_name': 'Построение систем машинного обучения на языке Python',
+ 'book_price': 1427.0,
+ 'book_rate': 6.75,
+ 'data_available_status': '1'}
+2021-08-11 23:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/713544/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/735073/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/568285/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/790533/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/560587/>
+{'_id': ObjectId('6114174a20ebc54f30e63b1a'),
+ 'book_authors': ['Вестра Эрик'],
+ 'book_discount_price': 1300.0,
+ 'book_link': 'https://www.labirint.ru/books/560587/',
+ 'book_name': 'Разработка геоприложений на языке Python',
+ 'book_price': 1733.0,
+ 'book_rate': 8.5,
+ 'data_available_status': '1'}
+2021-08-11 23:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/785345/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/799449/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/728419/>
+{'_id': ObjectId('6114174a20ebc54f30e63b1b'),
+ 'book_authors': ['Мартин Освальдо'],
+ 'book_discount_price': 1376.0,
+ 'book_link': 'https://www.labirint.ru/books/728419/',
+ 'book_name': 'Байесовский анализ на Python',
+ 'book_price': 1835.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/777260/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/713544/>
+{'_id': ObjectId('6114174a20ebc54f30e63b1c'),
+ 'book_authors': ['Данжу Джульен'],
+ 'book_discount_price': 1026.0,
+ 'book_link': 'https://www.labirint.ru/books/713544/',
+ 'book_name': 'Путь Python. Черный пояс по разработке, масштабированию, '
+              'тестированию и развертыванию',
+ 'book_price': 1315.0,
+ 'book_rate': 4.83,
+ 'data_available_status': '1'}
+2021-08-11 23:30:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/735073/>
+{'_id': ObjectId('6114174a20ebc54f30e63b1d'),
+ 'book_authors': ['Тоуманнен Бриан'],
+ 'book_discount_price': 1376.0,
+ 'book_link': 'https://www.labirint.ru/books/735073/',
+ 'book_name': 'Программирование GPU при помощи Python и CUDA. Исследуйте '
+              'высокопроизводительные параллельные вычисл',
+ 'book_price': 1835.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/568285/>
+{'_id': ObjectId('6114174b20ebc54f30e63b1e'),
+ 'book_authors': ['Силен Дэви', 'Мохамед Али', 'Мейсман Арно'],
+ 'book_discount_price': 1295.0,
+ 'book_link': 'https://www.labirint.ru/books/568285/',
+ 'book_name': 'Основы Data Science и Big Data. Python и наука о данных',
+ 'book_price': 1660.0,
+ 'book_rate': 6.56,
+ 'data_available_status': '1'}
+2021-08-11 23:30:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/790533/>
+{'_id': ObjectId('6114174b20ebc54f30e63b1f'),
+ 'book_authors': ['Митчелл Райан'],
+ 'book_discount_price': 1765.0,
+ 'book_link': 'https://www.labirint.ru/books/790533/',
+ 'book_name': 'Современный скрапинг веб-сайтов с помощью Python',
+ 'book_price': 2263.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/749459/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/756485/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/681061/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/503717/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/311244/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/550457/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/720874/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/785345/>
+{'_id': ObjectId('6114174b20ebc54f30e63b20'),
+ 'book_authors': ['Воган Ли'],
+ 'book_discount_price': 908.0,
+ 'book_link': 'https://www.labirint.ru/books/785345/',
+ 'book_name': '“Непрактичный” Python. Занимательные проекты для тех, кто хочет '
+              'поумнеть',
+ 'book_price': 1210.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/799449/>
+{'_id': ObjectId('6114174b20ebc54f30e63b21'),
+ 'book_authors': ['Хилл Кристиан'],
+ 'book_discount_price': 2447.0,
+ 'book_link': 'https://www.labirint.ru/books/799449/',
+ 'book_name': 'Научное программирование на Python',
+ 'book_price': 3263.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/777260/>
+{'_id': ObjectId('6114174b20ebc54f30e63b22'),
+ 'book_authors': ['Любанович Билл'],
+ 'book_discount_price': 1617.0,
+ 'book_link': 'https://www.labirint.ru/books/777260/',
+ 'book_name': 'Простой Python. Современный стиль программирования',
+ 'book_price': 2073.0,
+ 'book_rate': 10.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/749459/>
+{'_id': ObjectId('6114174b20ebc54f30e63b23'),
+ 'book_authors': ['Свейгарт Эл'],
+ 'book_discount_price': 1944.0,
+ 'book_link': 'https://www.labirint.ru/books/749459/',
+ 'book_name': 'Криптография и взлом шифров на Python',
+ 'book_price': 2592.0,
+ 'book_rate': 8.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/756485/>
+{'_id': ObjectId('6114174c20ebc54f30e63b24'),
+ 'book_authors': ['Вирсански Эйял'],
+ 'book_discount_price': 1530.0,
+ 'book_link': 'https://www.labirint.ru/books/756485/',
+ 'book_name': 'Генетические алгоритмы на Python',
+ 'book_price': 2040.0,
+ 'book_rate': 10.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/681061/>
+{'_id': ObjectId('6114174c20ebc54f30e63b25'),
+ 'book_authors': ['Джоши Пратик'],
+ 'book_discount_price': 2592.0,
+ 'book_link': 'https://www.labirint.ru/books/681061/',
+ 'book_name': 'Искусственный интеллект с примерами на Python. Создание '
+              'приложений искусственного интеллекта',
+ 'book_price': 3456.0,
+ 'book_rate': 5.72,
+ 'data_available_status': '1'}
+2021-08-11 23:30:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/503717/>
+{'_id': ObjectId('6114174c20ebc54f30e63b26'),
+ 'book_authors': ['МакГрат Майк'],
+ 'book_discount_price': 568.0,
+ 'book_link': 'https://www.labirint.ru/books/503717/',
+ 'book_name': 'Программирование на Python для начинающих',
+ 'book_price': 728.0,
+ 'book_rate': 7.67,
+ 'data_available_status': '1'}
+2021-08-11 23:30:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/311244/>
+{'_id': ObjectId('6114174c20ebc54f30e63b27'),
+ 'book_authors': ['Доусон Майкл'],
+ 'book_discount_price': 1087.0,
+ 'book_link': 'https://www.labirint.ru/books/311244/',
+ 'book_name': 'Программируем на Python',
+ 'book_price': 1393.0,
+ 'book_rate': 9.13,
+ 'data_available_status': '1'}
+2021-08-11 23:30:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/550457/>
+{'_id': ObjectId('6114174c20ebc54f30e63b28'),
+ 'book_authors': ['Свейгарт Эл'],
+ 'book_discount_price': 1944.0,
+ 'book_link': 'https://www.labirint.ru/books/550457/',
+ 'book_name': 'Автоматизация рутинных задач с помощью Python. Практическое '
+              'руководство для начинающих',
+ 'book_price': 2592.0,
+ 'book_rate': 9.93,
+ 'data_available_status': '1'}
+2021-08-11 23:30:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/720874/>
+{'_id': ObjectId('6114174c20ebc54f30e63b29'),
+ 'book_authors': ['Копец Дэвид'],
+ 'book_discount_price': 1112.0,
+ 'book_link': 'https://www.labirint.ru/books/720874/',
+ 'book_name': 'Классические задачи Computer Science на языке Python',
+ 'book_price': 1425.0,
+ 'book_rate': 8.5,
+ 'data_available_status': '1'}
+2021-08-11 23:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/651905/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/798005/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/546688/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/601607/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/792480/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/651905/>
+{'_id': ObjectId('6114174c20ebc54f30e63b2a'),
+ 'book_authors': ['Хеллман Даг'],
+ 'book_discount_price': 3890.0,
+ 'book_link': 'https://www.labirint.ru/books/651905/',
+ 'book_name': 'Стандартная библиотека Python 3. Справочник с примерами',
+ 'book_price': 5186.0,
+ 'book_rate': 10.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.labirint.ru/books/686984/> from <GET https://www.labirint.ru/books/611896/>
+2021-08-11 23:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/732482/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/595088/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/798005/>
+{'_id': ObjectId('6114174c20ebc54f30e63b2b'),
+ 'book_authors': ['Уилкс Мэттью'],
+ 'book_discount_price': 2600.0,
+ 'book_link': 'https://www.labirint.ru/books/798005/',
+ 'book_name': 'Профессиональная разработка на Python',
+ 'book_price': 3467.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/546688/>
+{'_id': ObjectId('6114174c20ebc54f30e63b2c'),
+ 'book_authors': ['Любанович Билл'],
+ 'book_discount_price': 1206.0,
+ 'book_link': 'https://www.labirint.ru/books/546688/',
+ 'book_name': 'Простой Python. Современный стиль программирования',
+ 'book_price': 1546.0,
+ 'book_rate': 9.05,
+ 'data_available_status': '1'}
+2021-08-11 23:30:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/601607/>
+{'_id': ObjectId('6114174c20ebc54f30e63b2d'),
+ 'book_authors': ['Бэрри Пол'],
+ 'book_discount_price': 1232.0,
+ 'book_link': 'https://www.labirint.ru/books/601607/',
+ 'book_name': 'Изучаем программирование на Python',
+ 'book_price': 1579.0,
+ 'book_rate': 8.48,
+ 'data_available_status': '1'}
+2021-08-11 23:30:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.labirint.ru/books/774752/> from <GET https://www.labirint.ru/books/695311/>
+2021-08-11 23:30:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.labirint.ru/books/728066/> from <GET https://www.labirint.ru/books/622649/>
+2021-08-11 23:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/644956/> (referer: https://www.labirint.ru/search/python/?stype=0)
+2021-08-11 23:30:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/792480/>
+{'_id': ObjectId('6114174c20ebc54f30e63b2e'),
+ 'book_authors': ['Дауни Аллен Б.'],
+ 'book_discount_price': 991.0,
+ 'book_link': 'https://www.labirint.ru/books/792480/',
+ 'book_name': 'Основы Python. Научитесь мыслить как программист',
+ 'book_price': 1271.0,
+ 'book_rate': 7.67,
+ 'data_available_status': '1'}
+2021-08-11 23:30:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/732482/>
+{'_id': ObjectId('6114174c20ebc54f30e63b2f'),
+ 'book_authors': ['Лутц Марк'],
+ 'book_discount_price': 3242.0,
+ 'book_link': 'https://www.labirint.ru/books/732482/',
+ 'book_name': 'Изучаем Python. Том 2',
+ 'book_price': 4322.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/595088/>
+{'_id': ObjectId('6114174c20ebc54f30e63b30'),
+ 'book_authors': ['Мюллер Адреас П.', 'Гвидо Сара'],
+ 'book_discount_price': 3890.0,
+ 'book_link': 'https://www.labirint.ru/books/595088/',
+ 'book_name': 'Введение в машинное обучение с помощью Python. Руководство для '
+              'специалистов по работе с данными',
+ 'book_price': 5186.0,
+ 'book_rate': 6.64,
+ 'data_available_status': '1'}
+2021-08-11 23:30:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.labirint.ru/books/684144/> from <GET https://www.labirint.ru/books/502700/>
+2021-08-11 23:30:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/644956/>
+{'_id': ObjectId('6114174c20ebc54f30e63b31'),
+ 'book_authors': ['Свейгарт Эл'],
+ 'book_discount_price': 723.0,
+ 'book_link': 'https://www.labirint.ru/books/644956/',
+ 'book_name': 'Учим Python, делая крутые игры',
+ 'book_price': 927.0,
+ 'book_rate': 9.45,
+ 'data_available_status': '1'}
+2021-08-11 23:30:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.labirint.ru/books/668926/> from <GET https://www.labirint.ru/books/591177/>
+2021-08-11 23:30:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.labirint.ru/books/676548/> from <GET https://www.labirint.ru/books/588691/>
+2021-08-11 23:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/596607/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/728066/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/596607/>
+{'_id': ObjectId('6114174d20ebc54f30e63b32'),
+ 'book_authors': ['Рейтц Кеннет', 'Шлюссер Таня'],
+ 'book_discount_price': 1313.0,
+ 'book_link': 'https://www.labirint.ru/books/596607/',
+ 'book_name': 'Автостопом по Python',
+ 'book_price': 1313.0,
+ 'book_rate': 10.0,
+ 'data_available_status': '0'}
+2021-08-11 23:30:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.labirint.ru/books/588691/> from <GET https://www.labirint.ru/books/522990/>
+2021-08-11 23:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/519875/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/728066/>
+{'_id': ObjectId('6114174d20ebc54f30e63b33'),
+ 'book_authors': ['Томашевский Петр Романович'],
+ 'book_discount_price': 764.0,
+ 'book_link': 'https://www.labirint.ru/books/728066/',
+ 'book_name': 'Привет, Python! Моя первая книга по программированию',
+ 'book_price': 764.0,
+ 'book_rate': 0.0,
+ 'data_available_status': '0'}
+2021-08-11 23:30:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/519875/>
+{'_id': ObjectId('6114174d20ebc54f30e63b34'),
+ 'book_authors': ['Сэнд Уоррен', 'Сэнд Картер'],
+ 'book_discount_price': 879.0,
+ 'book_link': 'https://www.labirint.ru/books/519875/',
+ 'book_name': 'Hello World! Занимательное программирование (Python)',
+ 'book_price': 879.0,
+ 'book_rate': 9.0,
+ 'data_available_status': '0'}
+2021-08-11 23:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/654841/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/481230/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/310851/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.labirint.ru/books/682545/> from <GET https://www.labirint.ru/books/630213/>
+2021-08-11 23:30:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/654841/>
+{'_id': ObjectId('6114174d20ebc54f30e63b35'),
+ 'book_authors': ['Вэйл Дэвид', 'О`Хэнлон Мартин'],
+ 'book_discount_price': 1149.0,
+ 'book_link': 'https://www.labirint.ru/books/654841/',
+ 'book_name': 'Minecraft. Программируй свой мир на Python',
+ 'book_price': 1149.0,
+ 'book_rate': 8.27,
+ 'data_available_status': '0'}
+2021-08-11 23:30:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/481230/>
+{'_id': ObjectId('6114174d20ebc54f30e63b36'),
+ 'book_authors': ['Вордерман Кэрол', 'Макаманус Шон', 'Вудкок Джон'],
+ 'book_discount_price': 1918.0,
+ 'book_link': 'https://www.labirint.ru/books/481230/',
+ 'book_name': 'Программирование для детей. Иллюстрированное руководство по '
+              'языкам Scratch и Python',
+ 'book_price': 1918.0,
+ 'book_rate': 8.35,
+ 'data_available_status': '0'}
+2021-08-11 23:30:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/310851/>
+{'_id': ObjectId('6114174d20ebc54f30e63b37'),
+ 'book_authors': ['Чэпмен Грэм', 'Гиллиам Терри', 'Айдл Эрик', 'Клиз Джон'],
+ 'book_discount_price': 779.0,
+ 'book_link': 'https://www.labirint.ru/books/310851/',
+ 'book_name': 'Питоны о Питонах. Автобиография группы "Воздушный цирк Монти '
+              'Питона"',
+ 'book_price': 779.0,
+ 'book_rate': 9.27,
+ 'data_available_status': '0'}
+2021-08-11 23:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/676548/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/591886/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/638292/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/676548/>
+{'_id': ObjectId('6114174d20ebc54f30e63b38'),
+ 'book_authors': ['Васильев Алексей Николаевич'],
+ 'book_discount_price': 978.0,
+ 'book_link': 'https://www.labirint.ru/books/676548/',
+ 'book_name': 'Python на примерах. Практический курс',
+ 'book_price': 978.0,
+ 'book_rate': 9.0,
+ 'data_available_status': '0'}
+2021-08-11 23:30:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/722194/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/591886/>
+{'_id': ObjectId('6114174e20ebc54f30e63b39'),
+ 'book_authors': ['Шоу Зед А.'],
+ 'book_discount_price': 791.0,
+ 'book_link': 'https://www.labirint.ru/books/591886/',
+ 'book_name': 'Легкий способ выучить Python',
+ 'book_price': 791.0,
+ 'book_rate': 7.08,
+ 'data_available_status': '0'}
+2021-08-11 23:30:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/638292/>
+{'_id': ObjectId('6114174e20ebc54f30e63b3a'),
+ 'book_authors': ['Дубовик Е. В.', 'Голиков С. В.', 'Русин Г. С.'],
+ 'book_discount_price': 708.0,
+ 'book_link': 'https://www.labirint.ru/books/638292/',
+ 'book_name': 'HTML, CSS, Scratch, Python. Моя первая книга',
+ 'book_price': 708.0,
+ 'book_rate': 7.33,
+ 'data_available_status': '0'}
+2021-08-11 23:30:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/619128/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/722194/>
+{'_id': ObjectId('6114174e20ebc54f30e63b3b'),
+ 'book_authors': ['Босова Людмила Леонидовна',
+                  'Штепа Юлия Леонидовна',
+                  'Кочергин Илья Олегович',
+                  'Аквилянов Никита Александрович'],
+ 'book_discount_price': 408.0,
+ 'book_link': 'https://www.labirint.ru/books/722194/',
+ 'book_name': 'Информатика. 8-9 классы. Начала программирования на языке '
+              'Python. Дополнительные главы к учебникам',
+ 'book_price': 408.0,
+ 'book_rate': 8.14,
+ 'data_available_status': '0'}
+2021-08-11 23:30:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/619128/>
+{'_id': ObjectId('6114174e20ebc54f30e63b3c'),
+ 'book_authors': [],
+ 'book_discount_price': 598.0,
+ 'book_link': 'https://www.labirint.ru/books/619128/',
+ 'book_name': 'Программирование для детей на языке Python',
+ 'book_price': 598.0,
+ 'book_rate': 8.33,
+ 'data_available_status': '0'}
+2021-08-11 23:30:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/600639/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/558936/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/670128/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/600639/>
+{'_id': ObjectId('6114174e20ebc54f30e63b3d'),
+ 'book_authors': ['Ричардсон Крэйг'],
+ 'book_discount_price': 1278.0,
+ 'book_link': 'https://www.labirint.ru/books/600639/',
+ 'book_name': 'Программируем с Minecraft. Создай свой мир с помощью Python',
+ 'book_price': 1278.0,
+ 'book_rate': 9.26,
+ 'data_available_status': '0'}
+2021-08-11 23:30:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/558936/>
+{'_id': ObjectId('6114174e20ebc54f30e63b3e'),
+ 'book_authors': ['Седжвик Роберт', 'Дондеро Роберт', 'Уэйн Кевин'],
+ 'book_discount_price': 3811.0,
+ 'book_link': 'https://www.labirint.ru/books/558936/',
+ 'book_name': 'Программирование на языке Python. Учебный курс',
+ 'book_price': 3811.0,
+ 'book_rate': 7.0,
+ 'data_available_status': '0'}
+2021-08-11 23:30:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/682545/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/670128/>
+{'_id': ObjectId('6114174e20ebc54f30e63b3f'),
+ 'book_authors': ['Харрисон Мэтт'],
+ 'book_discount_price': 1098.0,
+ 'book_link': 'https://www.labirint.ru/books/670128/',
+ 'book_name': 'Как устроен Python. Гид для разработчиков, программистов и '
+              'интересующихся',
+ 'book_price': 1098.0,
+ 'book_rate': 5.67,
+ 'data_available_status': '0'}
+2021-08-11 23:30:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/267927/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/682545/>
+{'_id': ObjectId('6114174e20ebc54f30e63b40'),
+ 'book_authors': ['Хейдт Майкл', 'Груздев Артем Владимирович'],
+ 'book_discount_price': 2600.0,
+ 'book_link': 'https://www.labirint.ru/books/682545/',
+ 'book_name': 'Изучаем pandas',
+ 'book_price': 3467.0,
+ 'book_rate': 7.0,
+ 'data_available_status': '1'}
+2021-08-11 23:30:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/267927/>
+{'_id': ObjectId('6114174e20ebc54f30e63b41'),
+ 'book_authors': ['Прохоренок Николай Анатольевич'],
+ 'book_discount_price': 475.0,
+ 'book_link': 'https://www.labirint.ru/books/267927/',
+ 'book_name': 'Python. Самое необходимое (+ Видеокурс на DVD)',
+ 'book_price': 475.0,
+ 'book_rate': 8.0,
+ 'data_available_status': '0'}
+2021-08-11 23:30:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.labirint.ru/books/23440/> (referer: https://www.labirint.ru/search/python/?stype=0&page=3)
+2021-08-11 23:30:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.labirint.ru/books/23440/>
+{'_id': ObjectId('6114174e20ebc54f30e63b42'),
+ 'book_authors': ['Сузи Роман '],
+ 'book_discount_price': 209.0,
+ 'book_link': 'https://www.labirint.ru/books/23440/',
+ 'book_name': 'Python в подлиннике',
+ 'book_price': 209.0,
+ 'book_rate': 9.6,
+ 'data_available_status': '0'}
+2021-08-11 23:30:38 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-08-11 23:30:38 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 79730,
+ 'downloader/request_count': 149,
+ 'downloader/request_method_count/GET': 149,
+ 'downloader/response_bytes': 9520608,
+ 'downloader/response_count': 149,
+ 'downloader/response_status_count/200': 134,
+ 'downloader/response_status_count/301': 15,
+ 'dupefilter/filtered': 14,
+ 'elapsed_time_seconds': 16.753871,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 8, 11, 18, 30, 38, 972450),
+ 'httpcompression/response_bytes': 69755619,
+ 'httpcompression/response_count': 134,
+ 'item_scraped_count': 131,
+ 'log_count/DEBUG': 281,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 3,
+ 'response_received_count': 134,
+ 'scheduler/dequeued': 149,
+ 'scheduler/dequeued/memory': 149,
+ 'scheduler/enqueued': 149,
+ 'scheduler/enqueued/memory': 149,
+ 'start_time': datetime.datetime(2021, 8, 11, 18, 30, 22, 218579)}
+2021-08-11 23:30:38 [scrapy.core.engine] INFO: Spider closed (finished)
